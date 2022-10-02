@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolsystem.Logincontroller">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000217;">
+            <children>
+                <Button fx:id="StaffLogin" layoutX="309.0" layoutY="265.0" mnemonicParsing="false" onAction="#onStaffLogin" onMouseEntered="#onSTLMouse" onMouseExited="#outSTLfMouse" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: f2a532;" text="Log in">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@login.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+
+                <TextField fx:id="StaffNumber" layoutX="377.0" layoutY="149.0" prefHeight="25.0" prefWidth="191.0" promptText="Enter your working number here" style="-fx-background-color: f2a532;" />
+            <ImageView fitHeight="227.0" fitWidth="190.0" layoutX="7.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@new.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="214.0" layoutY="152.0" text="Working Number" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="214.0" layoutY="198.0" prefHeight="25.0" prefWidth="66.0" text="Password" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <PasswordField fx:id="StaffPassword" layoutX="377.0" layoutY="198.0" prefHeight="25.0" prefWidth="191.0" promptText="Passwor here" style="-fx-background-color: f2a532;" />
+            <Label fx:id="WrongStaffLogin" layoutX="213.0" layoutY="88.0" prefHeight="17.0" prefWidth="350.0" textFill="#dc0f0f">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

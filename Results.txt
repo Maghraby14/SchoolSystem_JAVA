@@ -1,0 +1,29 @@
+///// ///////// ////////// ///////////
+/////// /////// /////// /////////////
+//////// /////////// /////// ///////
+19102722
+ Maths 30 10 60 100 b-
+Chemistry 27 8 57 92 A-
+Biology 20 10 60 90 c 
+Physics 27 5 57 89 A-
+
+Arabic 25 9 60 94 G
+English 27 7 57 91 A-
+
+19100479
+
+Maths 30 8 60 98 A+
+Chemistry 27 9 57 93 A
+Biology 30 9 60 99 A+
+Physics 27 9 57 93 A
+Arabic 30 9 60 99 A+
+English 27 9 57 93 A
+18209132
+ 
+Maths 30 3 60 93 A
+Chemistry 26 2 52 80 B
+Biology 20 8 50 78 B-
+Physics 10 8 57 75 B-
+Arabic 10 9 30 49 F
+English 3 0 9 12 F
+

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolsystem.StudentDataController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000326;">
+         <children>
+            <HBox layoutY="200.0" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #f2a532;">
+               <children>
+                  <Button fx:id="Englishresult" mnemonicParsing="false" onAction="#onEnglishClick" onMouseEntered="#onEnglishresMouse" onMouseExited="#outEnglishresMouse" prefHeight="101.0" prefWidth="178.0" style="-fx-background-color: #f2a532;" text="English">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@eng.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="Arabicresult" mnemonicParsing="false" onAction="#onArabicClick" onMouseEntered="#onArabicresMouse" onMouseExited="#outArabicresMouse" prefHeight="134.0" prefWidth="201.0" style="-fx-background-color: #f2a532;" text="Arabic">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@arabic.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="Biologyresult" mnemonicParsing="false" onAction="#onBiologyClick" onMouseEntered="#onBiologyresMouse" onMouseExited="#outBiologyresMouse" prefHeight="109.0" prefWidth="223.0" style="-fx-background-color: #f2a532;" text="Biology">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="79.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@biology.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutY="100.0" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #f2a532;">
+               <children>
+                  <Button fx:id="Mathresult" mnemonicParsing="false" onAction="#onMathClick" onMouseEntered="#onMathresMouse" onMouseExited="#outMathresMouse" prefHeight="103.0" prefWidth="183.0" style="-fx-background-color: #f2a532;" text="Math">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@maths(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="Physicsresult" mnemonicParsing="false" onAction="#onPhysicsClick" onMouseEntered="#onPhysicsresMouse" onMouseExited="#outPhysicsresMouse" prefHeight="100.0" prefWidth="208.0" style="-fx-background-color: #f2a532;" text="Physics">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@atom.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="Chemistryresult" mnemonicParsing="false" onAction="#onChemistryClick" onMouseEntered="#onChemresMouse" onMouseExited="#outChemresMouse" prefHeight="102.0" prefWidth="228.0" style="-fx-background-color: #f2a532;" text="Chemistry">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="66.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@chemistry.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #000326;">
+               <children>
+                  <Label prefHeight="100.0" prefWidth="514.0" text="Student Results" textFill="#f2a532">
+                     <font>
+                        <Font name="Ebrima Bold" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding></Label>
+                  <Button fx:id="backres" mnemonicParsing="false" onAction="#backspace" onMouseEntered="#onbackspaseresMouse" onMouseExited="#outbackspaseresMouse" prefHeight="60.0" prefWidth="106.0" style="-fx-background-color: #000326;">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@backspace.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@new.jpeg" />
+                     </image></ImageView>
+               </children>
+            </HBox>
+            <Label layoutX="31.0" layoutY="317.0" prefHeight="18.0" prefWidth="69.0" text="Midterm 1" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="166.0" layoutY="317.0" prefHeight="18.0" prefWidth="69.0" text="Midterm2" textAlignment="CENTER" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="300.0" layoutY="317.0" prefHeight="18.0" prefWidth="35.0" text="Final" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="408.0" layoutY="317.0" prefHeight="18.0" prefWidth="49.0" text="Total" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="Midterm1" layoutX="48.0" layoutY="341.0" prefHeight="33.0" prefWidth="35.0" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="Midterm2" layoutX="183.0" layoutY="341.0" prefHeight="33.0" prefWidth="35.0" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="Final" layoutX="307.0" layoutY="345.0" prefHeight="26.0" prefWidth="35.0" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="total" layoutX="415.0" layoutY="349.0" prefHeight="18.0" prefWidth="35.0" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="511.0" layoutY="313.0" prefHeight="26.0" prefWidth="49.0" text="Grade" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Grade" layoutX="518.0" layoutY="345.0" prefHeight="26.0" prefWidth="35.0" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

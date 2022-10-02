@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolsystem.StudentDataController">
+   <children>
+      <Pane onMouseEntered="#setProfileinfo" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000326;">
+         <children>
+            <HBox prefHeight="68.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="131.0" prefWidth="494.0" style="-fx-background-color: #f2a532;" text="Student Profile" textFill="#000217">
+                     <font>
+                        <Font name="Ebrima Bold" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="132.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@new.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox layoutY="130.0" prefHeight="271.0" prefWidth="120.0" style="-fx-background-color: #f2a532;">
+               <children>
+                  <Button fx:id="Studentinfo" mnemonicParsing="false" onAction="#setProfileinfo" onMouseEntered="#onStudentInfoMouse" onMouseExited="#outStudentInfoMouse" prefHeight="159.0" prefWidth="120.0" style="-fx-background-color: #f2a532;" text="Student info" textFill="#000326">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ViewAccount" mnemonicParsing="false" onAction="#setAccountinfo" onMouseEntered="#onStudentAccountMouse" onMouseExited="#outStudentAccountMouse" prefHeight="130.0" prefWidth="119.0" style="-fx-background-color: #f2a532;" text="Account" textFill="#000326">
+                     <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="152.0" fitWidth="228.0" layoutX="372.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="Field2" layoutX="128.0" layoutY="207.0" prefHeight="52.0" prefWidth="471.0" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Field1" layoutX="128.0" layoutY="138.0" prefHeight="52.0" prefWidth="465.0" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Field3" layoutX="120.0" layoutY="304.0" prefHeight="70.0" prefWidth="480.0" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="backpro" layoutX="529.0" layoutY="348.0" mnemonicParsing="false" onAction="#backspace" onMouseEntered="#onbackspaceproMouse" onMouseExited="#outbackspaceproMouse" prefHeight="52.0" prefWidth="70.0" style="-fx-background-color: #000326;">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@backspace.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

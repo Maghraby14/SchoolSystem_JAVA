@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolsystem.PrincipleDataController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000326;">
+         <children>
+            <HBox prefHeight="120.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="130.0" prefWidth="502.0" text="New Student" textFill="#f2a532">
+                     <font>
+                        <Font name="Ebrima Bold" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Button fx:id="backas" mnemonicParsing="false" onAction="#stuBackspace" onMouseEntered="#onbackasMouse" onMouseExited="#outbackasMouse" prefHeight="53.0" prefWidth="66.0" style="-fx-background-color: #000326;">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@backspace.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="134.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@new.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label layoutX="9.0" layoutY="156.0" prefHeight="26.0" prefWidth="76.0" text="Name:" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="216.0" prefHeight="26.0" prefWidth="65.0" text="Age:" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="258.0" prefHeight="26.0" prefWidth="65.0" text="Email" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="298.0" prefHeight="34.0" prefWidth="54.0" text="Id:" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="9.0" layoutY="347.0" prefHeight="34.0" prefWidth="76.0" text="Password:" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="StudentName" layoutX="90.0" layoutY="157.0" prefHeight="25.0" prefWidth="232.0" />
+            <TextField fx:id="StudentAge" layoutX="90.0" layoutY="212.0" prefHeight="25.0" prefWidth="232.0" />
+            <TextField fx:id="StudentEmail" layoutX="90.0" layoutY="259.0" prefHeight="25.0" prefWidth="232.0" />
+            <TextField fx:id="StudentId" layoutX="90.0" layoutY="302.0" prefHeight="25.0" prefWidth="232.0" />
+            <TextField fx:id="StudentPassword" layoutX="90.0" layoutY="351.0" prefHeight="25.0" prefWidth="232.0" />
+            <Button fx:id="PrincipleStudentAdd" layoutX="405.0" layoutY="323.0" mnemonicParsing="false" onAction="#onConfirmNewStudent" onMouseEntered="#onPrincipleStudentAddMouse" onMouseExited="#outPrincipleStudentAddMouse" prefHeight="49.0" prefWidth="119.0" style="-fx-background-color: #f2a532;" text="Confirm" textFill="#000326">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@confirm.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="355.0" layoutY="224.0" prefHeight="34.0" prefWidth="76.0" text="Grade:" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="StudentGrade" layoutX="431.0" layoutY="229.0" prefHeight="25.0" prefWidth="119.0" />
+            <TextField fx:id="StudentGender" layoutX="431.0" layoutY="169.0" prefHeight="25.0" prefWidth="119.0" />
+            <Label layoutX="355.0" layoutY="163.0" prefHeight="34.0" prefWidth="76.0" text="Gender:" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="AddedStudent" layoutX="348.0" layoutY="281.0" prefHeight="34.0" prefWidth="232.0" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

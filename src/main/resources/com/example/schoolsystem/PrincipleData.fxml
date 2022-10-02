@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolsystem.PrincipleDataController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000326;">
+         <children>
+            <Button fx:id="PrincipleLogout" layoutX="317.0" layoutY="230.0" mnemonicParsing="false" onAction="#onLogout" onMouseEntered="#onPrincipleLogoutMouse" onMouseExited="#outPrincipleLogoutMouse" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #f2a532;" text="Logout" textFill="#000326">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="PrincipleStudent" layoutX="317.0" layoutY="102.0" mnemonicParsing="false" onAction="#onStudentsClick" onMouseEntered="#onPrincipleStudentMouse" onMouseExited="#outPrincipleStudentMouse" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #f2a532;" text="Students" textFill="#000326">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@graduated.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="PrincipleTeacher" layoutX="52.0" layoutY="102.0" mnemonicParsing="false" onAction="#onTeachersClick" onMouseEntered="#onPrincipleTeacherMouse" onMouseExited="#outPrincipleTeacherMouse" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #f2a532;" text="Teachers" textFill="#000326">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@teacher.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="PrincipleSchoolAccounts" layoutX="52.0" layoutY="230.0" mnemonicParsing="false" onAction="#onSchoolAccounts" onMouseEntered="#onPrincipleSchoolAccountsMouse" onMouseExited="#outPrincipleSchoolAccountsMouse" prefHeight="105.0" prefWidth="200.0" style="-fx-background-color: #f2a532;" text="School Accounts" textFill="#000326">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@school.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <HBox layoutY="1.0" prefHeight="69.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="78.0" prefWidth="534.0" text="Supervisor" textFill="#f2a532">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fitHeight="90.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@new.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

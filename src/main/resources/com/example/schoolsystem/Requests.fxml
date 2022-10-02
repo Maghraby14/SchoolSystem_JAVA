@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolsystem.TeacherDataController">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000326;">
+            <children>
+                <HBox prefHeight="63.0" prefWidth="600.0">
+                    <children>
+                        <Label prefHeight="89.0" prefWidth="453.0" text="Requests" textFill="#f2a532">
+                            <font>
+                                <Font name="Ebrima Bold" size="24.0" />
+                            </font></Label>
+                        <ImageView fitHeight="46.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true" />
+                      <Button fx:id="reqbackspace" mnemonicParsing="false" onAction="#onBackspace" onMouseEntered="#onreqbackspaceMouse" onMouseExited="#outreqbackspaceeMouse" style="-fx-background-color: #000326;">
+                          <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@backspace.png" />
+                                  </image>
+                              </ImageView>
+                          </graphic>
+                      </Button>
+                    </children>
+                </HBox>
+                <Button fx:id="TeacherRequestHoliday" layoutX="37.0" layoutY="71.0" mnemonicParsing="false" onAction="#onHoliday" onMouseClicked="#onTeacherRequestHolidayMouse" onMouseEntered="#onTeacherRequestHolidayMouse" onMouseExited="#outTeacherRequestHolidayMouse" prefHeight="45.0" prefWidth="109.0" style="-fx-background-color: #f2a532;" text="Holiday" textFill="#000326">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@relax.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+                </Button>
+                <Button fx:id="TeacherRequestStudentDiscipline" layoutX="202.0" layoutY="71.0" mnemonicParsing="false" onAction="#onStudentDisipline" onMouseClicked="#onTeacherRequestStudentDisciplineMouse" onMouseEntered="#onTeacherRequestStudentDisciplineMouse" onMouseExited="#outTeacherRequestStudentDisciplineMouse" prefHeight="45.0" prefWidth="180.0" style="-fx-background-color: #f2a532;" text="Student Discipline" textFill="#000326">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@graduated.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+                </Button>
+                <Button fx:id="TeacherRequestMeeting" layoutX="422.0" layoutY="71.0" mnemonicParsing="false" onAction="#onMetting" onMouseClicked="#onTeacherRequestMeetingMouse" onMouseEntered="#onTeacherRequestMeetingMouse" onMouseExited="#outTeacherRequestMeetingMouse" prefHeight="45.0" prefWidth="109.0" style="-fx-background-color: #f2a532;" text="Meeting" textFill="#000326">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@group-communication.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+                </Button>
+                <Label fx:id="Comment" layoutX="27.0" layoutY="133.0" prefHeight="35.0" prefWidth="349.0" text="Add comment:" textFill="#f2a532">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Button fx:id="TeacherRequestSubmit" layoutX="435.0" layoutY="357.0" mnemonicParsing="false" onAction="#onSubmit" onMouseClicked="#onTeacherRequestSubmitMouse" onMouseEntered="#onTeacherRequestSubmitMouse" onMouseExited="#outTeacherRequestSubmitMouse" prefHeight="29.0" prefWidth="134.0" style="-fx-background-color: #f2a532;" text="Submit" textFill="#000326">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@submit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+                </Button>
+            <TextField fx:id="request" layoutX="27.0" layoutY="168.0" prefHeight="172.0" prefWidth="503.0" />
+            <Label fx:id="ConfirmRequest" layoutX="54.0" layoutY="351.0" prefHeight="35.0" prefWidth="349.0" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

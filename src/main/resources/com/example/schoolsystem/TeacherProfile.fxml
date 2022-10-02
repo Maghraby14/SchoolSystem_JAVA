@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolsystem.TeacherDataController">
+    <children>
+        <Pane onMouseEntered="#OnShowInfo" onMouseExited="#OnShowInfo" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000326;">
+            <children>
+                <HBox prefHeight="103.0" prefWidth="600.0">
+                    <children>
+                        <Label prefHeight="95.0" prefWidth="512.0" text="Classes" textFill="#f2a532">
+                            <font>
+                                <Font name="Ebrima Bold" size="24.0" />
+                            </font></Label>
+                        <ImageView fitHeight="104.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@new.jpeg" />
+                     </image></ImageView>
+                    </children>
+                </HBox>
+                <Label layoutX="34.0" layoutY="139.0" prefHeight="28.0" prefWidth="169.0" text="Class NO-Day-Time" textFill="#f2a532">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font></Label>
+                <Label fx:id="Class1" layoutX="34.0" layoutY="181.0" prefHeight="28.0" prefWidth="292.0" textFill="#f2a532">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="Class4" layoutX="34.0" layoutY="296.0" prefHeight="28.0" prefWidth="292.0" textFill="#f2a532">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="Class2" layoutX="34.0" layoutY="216.0" prefHeight="28.0" prefWidth="292.0" textFill="#f2a532">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="Class3" layoutX="34.0" layoutY="255.0" prefHeight="28.0" prefWidth="292.0" textFill="#f2a532">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="Class5" layoutX="34.0" layoutY="324.0" prefHeight="28.0" prefWidth="292.0" textFill="#f2a532">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="Class6" layoutX="23.0" layoutY="358.0" prefHeight="28.0" prefWidth="298.0" textFill="#f2a532">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+                </Label>
+            <Button fx:id="probackspace" layoutX="543.0" layoutY="353.0" mnemonicParsing="false" onAction="#onBackspace" onMouseEntered="#onprobackspaceMouse" onMouseExited="#outprobackspaceMouse" prefHeight="46.0" prefWidth="57.0" style="-fx-background-color: #000326;">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@backspace.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

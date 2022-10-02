@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolsystem.TeacherDataController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000326;">
+         <children>
+            <HBox prefHeight="51.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="55.0" prefWidth="510.0" text="Add Student Grades" textFill="#f2a532">
+                     <font>
+                        <Font name="Ebrima Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="55.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <Label layoutX="327.0" layoutY="130.0" prefHeight="25.0" prefWidth="73.0" text="Midterm 2" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <TextField fx:id="StudentNumber" layoutX="141.0" layoutY="63.0" prefHeight="25.0" prefWidth="159.0" />
+            <Label layoutX="12.0" layoutY="63.0" prefHeight="25.0" prefWidth="124.0" text="Student Number" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="327.0" layoutY="63.0" prefHeight="25.0" prefWidth="65.0" text="Subject" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="134.0" prefHeight="25.0" prefWidth="94.0" text="MidTerm 1" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="156.0" layoutY="202.0" prefHeight="18.0" prefWidth="53.0" text="Final" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font></Label>
+            <TextField fx:id="Final" layoutX="236.0" layoutY="198.0" prefHeight="25.0" prefWidth="159.0" />
+            <TextField fx:id="Midterm1" layoutX="141.0" layoutY="134.0" prefHeight="25.0" prefWidth="159.0" />
+            <TextField fx:id="Midterm2" layoutX="414.0" layoutY="130.0" prefHeight="25.0" prefWidth="150.0" />
+            <Button fx:id="TeacherAddStudentGrades" layoutX="236.0" layoutY="306.0" mnemonicParsing="false" onAction="#onAddGrade" onMouseEntered="#onTeacherAddStudentGradesMouse" onMouseExited="#outTeacherAddStudentGradesMouse" prefHeight="31.0" prefWidth="137.0" style="-fx-background-color: f2a532;" text="Add Grade" textFill="#000326">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="Adding" layoutX="66.0" layoutY="265.0" prefHeight="18.0" prefWidth="468.0" textAlignment="CENTER" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="mawad" layoutX="414.0" layoutY="63.0" onMouseClicked="#oncombo" prefWidth="150.0" />
+            <Button fx:id="grabackspace" layoutX="555.0" layoutY="363.0" mnemonicParsing="false" onAction="#onBackspace" onMouseEntered="#ongrabackspaceMouse" onMouseExited="#outgrabackspaceMouse" style="-fx-background-color: #000326;">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@backspace.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

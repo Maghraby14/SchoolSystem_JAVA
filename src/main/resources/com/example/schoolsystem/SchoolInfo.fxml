@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolsystem.PrincipleDataController">
+    <children>
+        <Pane onMouseEntered="#onSchoolInfo" onMouseExited="#onSchoolInfo" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000326;">
+            <children>
+                <HBox prefHeight="81.0" prefWidth="600.0">
+                    <children>
+                        <Label prefHeight="82.0" prefWidth="550.0" text="School Data" textFill="#f2a532">
+                            <font>
+                                <Font name="Ebrima Bold" size="24.0" />
+                            </font></Label>
+                        <ImageView fitHeight="85.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@new.jpeg" />
+                     </image></ImageView>
+                    </children>
+                </HBox>
+                <Label fx:id="StudentInfo" layoutX="34.0" layoutY="167.0" prefHeight="28.0" prefWidth="499.0" textFill="#f2a532">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font></Label>
+                <Label fx:id="TeacherInfo" layoutX="34.0" layoutY="227.0" prefHeight="28.0" prefWidth="507.0" textFill="#f2a532">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="Revenue" layoutX="34.0" layoutY="307.0" prefHeight="17.0" prefWidth="185.0" textFill="#f2a532">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="Cost" layoutX="343.0" layoutY="307.0" prefHeight="17.0" prefWidth="185.0" textFill="#f2a532">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="profit" layoutX="208.0" layoutY="349.0" prefHeight="17.0" prefWidth="185.0" textFill="#f2a532">
+                    <font>
+                        <Font name="Ebrima Bold" size="14.0" />
+                    </font>
+                </Label>
+            <Label fx:id="StudentInfo1" layoutX="257.0" layoutY="123.0" prefHeight="28.0" prefWidth="61.0" text="Costs" textFill="#f2a532">
+               <font>
+                  <Font name="Ebrima Bold" size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+        <Button fx:id="backsi" layoutX="533.0" layoutY="346.0" mnemonicParsing="false" onAction="#NorBackspace" onMouseEntered="#onbacksiMouse" onMouseExited="#outbacksiMouse" prefHeight="53.0" prefWidth="66.0" style="-fx-background-color: #000326;">
+         <graphic>
+                <ImageView fitHeight="43.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@backspace.png" />
+                    </image>
+                </ImageView>
+         </graphic></Button>
+    </children>
+
+</AnchorPane>
